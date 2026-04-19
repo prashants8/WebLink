@@ -11,8 +11,8 @@
     "reinstall": "node scripts/manage-build.mjs reinstall",
     "dev": "node scripts/manage-build.mjs dev:safe",
     "dev:next": "next dev",
-    "build": "node scripts/manage-build.mjs build:safe",
-    "build:next": "next build --webpack",
+    "build": "next build",
+    "build:safe": "node scripts/manage-build.mjs build:safe",
     "start": "next start"
   },
   "dependencies": {
