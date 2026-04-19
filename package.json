@@ -1,0 +1,40 @@
+{
+  "name": "driveto",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "clean": "node scripts/manage-build.mjs clean",
+    "clean:reinstall": "node scripts/manage-build.mjs clean:reinstall",
+    "reinstall": "node scripts/manage-build.mjs reinstall",
+    "dev": "node scripts/manage-build.mjs dev:safe",
+    "dev:next": "next dev",
+    "build": "node scripts/manage-build.mjs build:safe",
+    "build:next": "next build --webpack",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@onlyoffice/document-editor-react": "^2.1.1",
+    "@supabase/ssr": "^0.10.2",
+    "@supabase/supabase-js": "^2.103.3",
+    "clsx": "2.1.1",
+    "jsonwebtoken": "^9.0.3",
+    "jszip": "^3.10.1",
+    "lucide-react": "0.454.0",
+    "next": "^16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "autoprefixer": "10.4.20",
+    "postcss": "8.4.49",
+    "tailwindcss": "3.4.16",
+    "typescript": "5.7.2"
+  }
+}
